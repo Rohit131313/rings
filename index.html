@@ -12,13 +12,6 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Gallery</title>
     <style>
-        .active1 {
-            background-color: rgb(228, 26, 164);
-            color: white;
-            width:fit-content;
-            height:fit-content;
-            border-radius: 1vw;
-        }
         .main {
             background: rgb(214, 241, 65);
             background: linear-gradient(90deg, rgba(214, 241, 65, 1) 0%, rgba(233, 223, 11, 1) 35%, rgba(6, 166, 145, 1) 100%);
@@ -57,6 +50,14 @@
             text-decoration: none;
             font-size: 25px;
             margin-top: 0.5vw;
+        }
+
+        .active1 {
+            background-color: rgb(228, 26, 164);
+            color: white;
+            width: fit-content;
+            height: fit-content;
+            border-radius: 1vw;
         }
 
         .active {
@@ -193,7 +194,7 @@
             grid-template-rows: repeat(4, 25vw);
             gap: 1vw;
             margin-left: 40%;
-            margin-top:10%;
+            margin-top: 10%;
         }
 
         .photo-grid img {
@@ -201,16 +202,61 @@
             height: 100%;
             object-fit: cover;
             border-radius: 2vw;
+            border: 1px solid black;
         }
-        .heading{
-            color:black;
+
+        .heading {
+            color: black;
             background-color: rgb(9, 227, 198);
-            margin-left:41%;
-            margin-top:5%;
-            margin-right:25%;
-            padding-left:3%;
+            margin-left: 41%;
+            margin-top: 5%;
+            margin-right: 25%;
+            padding-left: 3%;
             border-radius: 1vw;
-            font-size:4vw;
+            font-size: 4vw;
+        }
+
+        .last {
+            height: 25vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            background: rgb(214, 241, 65);
+            background: linear-gradient(90deg, rgba(214, 241, 65, 1) 0%, rgba(233, 223, 11, 1) 35%, rgba(6, 166, 145, 1) 100%)
+        }
+
+        .logo1 {
+            height: 6vw;
+            width: 6vw;
+            margin-left: 21vw;
+            margin-top: 4vw;
+
+        }
+
+        .plogo1 {
+            margin-top: 1vw;
+            margin-left: 9vw;
+            font-size: 1vw;
+        }
+
+        .second1 {
+            display: inline-block;
+        }
+
+        .second {
+            margin-top: 3vw;
+            margin-left: 9vw;
+        }
+
+        .third {
+            margin-top: 5vw;
+        }
+
+        .footer {
+            background-color: grey;
+            color: white;
+            padding-left: 40%;
+            font-weight: bold;
+
         }
     </style>
 </head>
@@ -220,7 +266,7 @@
 
         <div class="topnav" id="myTopnav">
             <img class="logo" src="logo.jpg">
-            <a href="#home" >Home</a>
+            <a href="#home">Home</a>
             <a href="#news" class="active">Gallery</a>
             <a href="#contact">About</a>
             <a href="#about">Contact</a>
@@ -230,10 +276,10 @@
         </div>
         <div class="grid">
             <div class="grid-items">
-                <p  class="active1">Ring</p>
+                <p class="active1">Ring</p>
             </div>
             <div class="grid-items">
-                <p>Necklace</p>
+                <p >Necklace</p>
             </div>
             <div class="grid-items">
                 <p>Bracelet</p>
@@ -246,7 +292,7 @@
             </div>
         </div>
 
-        <h1 class="heading">Rings Collection</h1>
+        <h1 class="heading">Ring Collection</h1>
         <div class="photo-grid">
             <img src="a1.png" alt="Photo 1">
             <img src="a2.png" alt="Photo 2">
@@ -257,6 +303,46 @@
             <img src="a7.jpg" alt="Photo 7">
             <img src="a8.jpg" alt="Photo 8">
         </div>
+        <div class="last">
+            <div id="first">
+                <img class="logo1" src="logo.jpg">
+                <pre class="plogo1">
+                At Gupta Jewellers, we believe that every 
+                  piece of jewelry tells a story.
+                Let us help you find the perfect piece to
+                    express yours.</pre>
+            </div>
+            <div class="second">
+                <p>
+                <h2>Visit Our Store</h2>
+
+                <i class="fa-solid fa-shop" style="color: #0d0f12;margin-top:2vw"></i>
+                <p class="second1">Monday To Saturday</p>
+                <p style="margin-left:1vw;">11:00AM-08:00PM</p>
+                <h2>Contact Info:</h2>
+                <i id=wts class="fa fa-whatsapp" style="color:rgb(12, 12, 12);"></i>
+                <p style="display:inline-block">+91</p>
+                <p></p>
+                <i class="fa-regular fa-envelope" style="color: #141414;"></i>
+                <p style="display:inline-block">xyz@gmail.com</p>
+                </p>
+            </div>
+            <div class="third">
+                <i id="fac" class="fa-brands fa-facebook  fa-2xl" style="color: #0d0d0d;"></i>
+                <i id="ins" class="fa-brands fa-instagram fa-2xl" style="color: #111212;margin-left:1vw"></i>
+                <i id="twi" class="fa-brands fa-twitter fa-2xl" style="color: #0d0d0d;margin-left:1vw;"></i>
+                <h2 style="margin-top:1vw;">Address</h2>
+                <p style="margin-right:2vw;">
+                    Street: 9/1, Darshana, Quarry Rd, Bhandup (west)
+                    City: Mumbai
+                    State/province/area: Maharashtra
+                    Phone number 02225949474
+                    Zip code 400078
+                </p>
+            </div>
+        </div>
+
+        <footer class="footer">Copyright © 2023 Gupta Jewellers. All rights reserved.</footer>
 
 
 
@@ -273,6 +359,49 @@
     wts.addEventListener('mouseout', function () {
         wts.style.cssText += "background-color:#f2efef;color:rgb(33, 240, 10);font-size:50px;margin-top:1.5vw;";
     })
+    let fac = document.getElementById("fac");
+    url = "";
+    fac.addEventListener('click', function () {
+        window.open(url);
+    })
+    fac.addEventListener('mouseover', function () {
+        fac.style.cssText += "color:white;";
+    });
+    fac.addEventListener('mouseout', function () {
+        fac.style.cssText += "color:black";
+    });
+
+    let ins = document.getElementById("ins");
+    url = "";
+    ins.addEventListener('click', function () {
+        window.open(url);
+    })
+    ins.addEventListener('mouseover', function () {
+        ins.style.cssText += "color:white;";
+    });
+    ins.addEventListener('mouseout', function () {
+        ins.style.cssText += "color:black";
+    });
+
+    let twi = document.getElementById("twi");
+    url = "";
+    twi.addEventListener('click', function () {
+        window.open(url);
+    })
+    twi.addEventListener('mouseover', function () {
+        twi.style.cssText += "color:white;";
+    });
+    twi.addEventListener('mouseout', function () {
+        twi.style.cssText += "color:black";
+    });
 </script>
+
+<script src="https://kit.fontawesome.com/a07811c452.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+    integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+    crossorigin="anonymous"></script>
 
 </html>
